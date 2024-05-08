@@ -1,18 +1,115 @@
+
 h1 {
     font-size: 70px;
     font-weight: 800;
     text-align: center;
-    margin: 50px 10px 10px;
+    margin: 20px 0;
 }
 
-.texto-caja{
+.texto-caja {
     font-weight: 600;
+    color: #FFFFFF;
 }
 
-.cajita{
+.cajita {
     box-shadow: 5px 5px 5px #e3e3e3;
 }
 
-.card-body{
-    background-color: #ffeaea;;
+.card-body {
+    background-color: #fbfbfb;
+    height: 225px;
+}
+
+/**/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#product,
+#product2,
+#product3 {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#purchaseHistory {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #E3E3E3;
+    border: none;
+    color: #1B1B1B;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #9d94ff;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+#clearCartButton {
+    background-color: #f44336;
+}
+
+#clearCartButton:hover {
+    background-color: #d32f2f;
+}
+
+.product h2 {
+    color: #1B1B1B;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 23px;
+}
+
+.product p {
+    color: #1b1b1b;
+}
+
+.carrito-mensaje{
+    text-align: center;
+    background-color: #fbfbfb;
+    margin: 20px 0;
+    padding: 50px 0;
+}
+
+.carrito-mensaje h2{
+    color: #1B1B1B;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 23px;
+}
+
+.total-compra{
+    background-color: #deb88773;
+    padding: 10px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 15px #e3e3e3;
+    font-weight: 700;
 }

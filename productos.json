@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Diseño web", "price": 100000, "image": "./img/img-1-.jpg" },
+    { "id": 2, "name": "Marketing digital", "price": 50000, "image": "./img/img-2-.jpg" },
+    { "id": 3, "name": "Desarrollo web", "price": 200000, "image": "./img/img-3-.jpg" },
+    { "id": 4, "name": "Copy Writter", "price": 10000, "image": "./img/img-4.jpg" },
+    { "id": 5, "name": "Análisis de datos", "price": 300000, "image": "./img/img-5-.jpg" }
+]
+

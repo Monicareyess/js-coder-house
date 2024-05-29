@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PreEntrega3+ReyesMonica</title>
+
+</head>
+
+<body>
+    <section class="tienda">
+        <h1>¡Trabajemos juntos!</h1>
+        <br>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card cajita">
+                        <img src="./img/img-1-.jpg" class="card-img-top" alt="...">
+                        <div class="card-body card-nombre">
+                            <div id="product1" class="product">
+                                <h2>Diseño gráfico</h2>
+                                <p>Costo por mes: $100.000</p>
+                                <button class="add-to-cart">¡Lo quiero!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-md-4 col-sm-12">
+                    <div class="card cajita">
+                        <img src="./img/img-2-.jpg" class="card-img-top" alt="...">
+                        <div class="card-body card-nombre">
+                            <div id="product2" class="product">
+                                <h2>Marketing digital</h2>
+                                <p>Costo por mes: $50.000</p>
+                                <button class="add-to-cart">¡Lo quiero!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-md-4 col-sm-12">
+                    <div class="card cajita">
+                        <img src="./img/img-3-.jpg" class="card-img-top" alt="...">
+                        <div class="card-body card-nombre">
+                            <div id="product3" class="product">
+                                <h2>Mantenimiento de página web</h2>
+                                <p>Costo por mes: $200.000</p>
+                                <button class="add-to-cart">¡Lo quiero!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <br>
+    <!---->
+    <div id="cart" class="carrito-mensaje" style="display: none;">
+        <h2>😃Tu lista de deseos:</h2>
+        <ul id="cart-items">
+            <!-- Aquí se van a mostrar los productos que elija  -->
+        </ul>
+        <p>Total: <span id="cart-total" class="total-compra">$0</span></p>
+        <button id="clear-cart">Vaciar Carrito</button>
+        <button id="checkout">Pagar</button>
+    </div>
+
+
+    <script src="./script-preentrega-3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

@@ -1,9 +1,22 @@
+.tienda {
+    /* background-color: #1B1B1B; */
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    margin: 0 !important;
+}
 
 h1 {
     font-size: 70px;
     font-weight: 800;
     text-align: center;
-    margin: 20px 0;
+    padding: 60px 0 0 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 210;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .texto-caja {
@@ -13,10 +26,17 @@ h1 {
 
 .cajita {
     box-shadow: 5px 5px 5px #e3e3e3;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.cajita:hover {
+    background-color: rgba(177, 178, 255, 0.151);
+    box-shadow: 1px 1px 25px #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .card-body {
-    background-color: #fbfbfb;
     height: 225px;
 }
 
@@ -92,24 +112,31 @@ button:hover {
     color: #1b1b1b;
 }
 
-.carrito-mensaje{
+.carrito-mensaje {
     text-align: center;
-    background-color: #fbfbfb;
-    margin: 20px 0;
     padding: 50px 0;
 }
 
-.carrito-mensaje h2{
+.carrito-mensaje h2 {
     color: #1B1B1B;
     font-weight: 900;
     font-size: 25px;
     line-height: 23px;
 }
 
-.total-compra{
+.total-compra {
     background-color: #deb88773;
     padding: 10px;
     border-radius: 10%;
     box-shadow: 5px 5px 15px #e3e3e3;
     font-weight: 700;
+}
+
+#product-container {
+    justify-content: center;
+}
+
+#product-container div {
+    margin-bottom: 20px;
+    transition: 1s;
 }

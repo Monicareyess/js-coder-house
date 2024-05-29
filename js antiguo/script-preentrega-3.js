@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const products = [
         { name: "Diseño gráfico", price: 100000 },
         { name: "Marketing digital", price: 50000 },
@@ -12,23 +12,52 @@ document.addEventListener("DOMContentLoaded", function() {
     const checkoutButton = document.getElementById("checkout");
     const cartTotal = document.getElementById("cart-total");
 
-    addToCartButtons.forEach(function(button, index) {
-        button.addEventListener("click", function() {
+    addToCartButtons.forEach(function (button, index) {
+        button.addEventListener("click", function () {
             addToCart(products[index]);
             updateCartUI();
+            //Usando Toastify:
+            Toastify({
+                text: "¡Yeiii! Tu producto se agregó 😋 ",
+                duration: 3000,
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #96c93d)",
+                  },
+            }).showToast();
         });
     });
 
-    clearCartButton.addEventListener("click", function() {
+    clearCartButton.addEventListener("click", function () {
         clearCart();
         updateCartUI();
     });
 
-    checkoutButton.addEventListener("click", function() {
-               alert("Pago realizado con éxito 🤑 . ¡Gracias por su compra!");
-        clearCart();
-        updateCartUI();
+    //Antiguo código para el alert:
+
+    // checkoutButton.addEventListener("click", function () {
+    //   alert("Pago realizado con éxito 🤑 . ¡Gracias por su compra!");
+    // clearCart();
+    //updateCartUI();
+    // });
+
+    //Usando Sweet Alert 2:
+
+    checkoutButton.addEventListener("click", function () {
+        Swal.fire({
+            title: "Pago realizado con éxito 🤑",
+            text: "¡Juntos haremos cosas maravillosas!",
+            icon: "success"
+        });
     });
+
+    clearCartButton.addEventListener("click", function () {
+        Swal.fire({
+            title: "¡Listoo! Tu carrito está vacío de nuevo 😣  ",
+            text: "",
+            icon: "success"
+        });
+    });
+
 
     function addToCart(item) {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -44,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const cart = JSON.parse(localStorage.getItem("cart")) || [];
         cartItems.innerHTML = "";
         let total = 0;
-        cart.forEach(function(item) {
+        cart.forEach(function (item) {
             const li = document.createElement("li");
             li.textContent = `${item.name} - $${item.price}`;
             cartItems.appendChild(li);
